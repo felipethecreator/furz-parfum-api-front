@@ -4,3 +4,4 @@
 
 3-Implementar funções ao button (desenvolver uma página para login e registro de user)
 
+4-Acrescentar README ao projeto
