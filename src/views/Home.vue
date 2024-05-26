@@ -9,6 +9,11 @@ import HeaderHome from '../components/Header.vue'
 <div class="subTitle">
     <p>Desperte seus sentidos, libere a sua essência</p>
 </div>
+<div class="loginButton">
+    <h1>
+        <button>Login</button>
+    </h1>
+</div>
 </template>
 
 <style>
@@ -21,6 +26,12 @@ import HeaderHome from '../components/Header.vue'
     font-family: Kurale;
     src: url(../assets/fonts/Kurale-Regular.ttf);
 }
+
+@font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins-Light.ttf);
+}
+
 body {
     background-image: url(../assets/images/landingpage.png);
     background-size: cover;
@@ -54,5 +65,14 @@ body {
     text-align: center;
     
 
+}
+
+.loginButton {
+    font-family: Poppins;
+    background-color: #3F3244;
+    position: absolute;
+    font-size: 28px;
+    top: 70%;
+    left: 50%;
 }
 </style>
