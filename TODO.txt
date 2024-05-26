@@ -1,7 +1,9 @@
-1-Terminar a view Home, assim concluindo a primeira página do projeto
+1-Acrescentar responsive html na view Home
 
-2-Desenvolver um código limpo na view Home
+2-Terminar a view Home, assim concluindo a primeira página do projeto
 
-3-Implementar funções ao button (desenvolver uma página para login e registro de user)
+3-Desenvolver um código limpo na view Home
 
-4-Acrescentar README ao projeto
+4-Implementar funções ao button (desenvolver uma página para login e registro de user)
+
+5-Acrescentar README ao projeto
