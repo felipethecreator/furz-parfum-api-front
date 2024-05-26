@@ -8,7 +8,7 @@ import HeaderHome from '../components/Header.vue'
 
 <style>
 body {
-    background-image: url(../assets/images/girl-spraying-parfum.jpg);
+    background-image: url(../assets/images/landingpage.png);
     background-size: cover;
     
 }
