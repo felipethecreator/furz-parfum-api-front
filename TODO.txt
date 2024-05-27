@@ -1,4 +1,4 @@
-1-Acrescentar responsive html na view Home
+1-Iniciar testes do postman e colocar os mesmos no repositório
 
 2-Terminar a view Home, assim concluindo a primeira página do projeto
 
