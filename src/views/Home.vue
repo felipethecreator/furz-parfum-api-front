@@ -3,76 +3,110 @@ import HeaderHome from '../components/Header.vue'
 </script>
 
 <template>
-<div class="pageTitle">
-    <p class="Title">Furz<br>parfum</p>
-</div>
-<div class="subTitle">
-    <p>Desperte seus sentidos, libere a sua essência</p>
-</div>
-<div class="loginButton">
-    <h1>
-        <button>Login</button>
-    </h1>
-</div>
+  <div class="container">
+    <p class="pageTitle">
+      <p class="title">Furz<br>parfum</p>
+    </p>
+    <p class="subTitle">
+      <p>Desperte seus sentidos, libere a sua essência</p>
+    </p>
+    <p class="loginButton">
+      <button>Login</button>
+    </p>
+    </div>
 </template>
+
 
 <style>
 
 @font-face {
-    font-family: PetitFormal;
-    src: url(../assets/fonts/PetitFormalScript-Regular.ttf)
+  font-family: PetitFormal;
+  src: url(../assets/fonts/PetitFormalScript-Regular.ttf);
 }
 @font-face {
-    font-family: Kurale;
-    src: url(../assets/fonts/Kurale-Regular.ttf);
+  font-family: Kurale;
+  src: url(../assets/fonts/Kurale-Regular.ttf);
 }
-
 @font-face {
-    font-family: Poppins;
-    src: url(../assets/fonts/Poppins-Light.ttf);
+  font-family: Poppins;
+  src: url(../assets/fonts/Poppins-Light.ttf);
 }
 
 body {
-    background-image: url(../assets/images/landingpage.png);
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    height: 100vh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../assets/images/landingpage.png);
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
 }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 20vh; /* Ajuste conforme necessário */
+  box-sizing: border-box;
+  
+
+}
+
 .pageTitle {
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+  font-family: 'PetitFormal', serif;
+  font-size: 150px;
+  margin: 0;
+line-height: 1;
+background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
 }
 
-.Title {
-    font-family: PetitFormal, sans-serif;
-    font-size: 170px;
-    color: #000; 
-    line-height: 0.9;
-}
 .subTitle {
-    font-family: Kurale;
-    font-size: 50px;
-    position: absolute;
-    top:53%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    
-
+  font-family: 'Kurale', serif;
+  font-size: 30px;
+  margin-top: 1em;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
 }
 
 .loginButton {
-    font-family: Poppins;
-    background-color: #3F3244;
-    position: absolute;
-    font-size: 28px;
-    top: 70%;
-    left: 50%;
+  margin-top: 2em;
 }
+
+button {
+  font-family: 'Poppins', sans-serif;
+  padding: 0.5em 1em;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  background-color: #3F3244;
+  color: white;
+  border-radius: 5px;
+}
+
+@media (max-width: 600px) {
+  .pageTitle {
+    font-size: 2em;
+  }
+
+  .subTitle {
+    font-size: 1.2em;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 0.4em 0.8em;
+  }
+}
+
+
 </style>
