@@ -33,3 +33,15 @@
       padding: 0 2rem;
     }
   }
+  @font-face {
+    font-family: PetitFormal;
+    src: url(../assets/fonts/PetitFormalScript-Regular.ttf);
+  }
+  @font-face {
+    font-family: Kurale;
+    src: url(../assets/fonts/Kurale-Regular.ttf);
+  }
+  @font-face {
+    font-family: Poppins;
+    src: url(../assets/fonts/Poppins-Light.ttf);
+  }

@@ -13,24 +13,12 @@ import HeaderHome from '../components/Header.vue'
     <p class="loginButton">
       <button>Login</button>
     </p>
+    <p>Não possui login? Cadastre-se</p>
     </div>
 </template>
 
 
 <style>
-
-@font-face {
-  font-family: PetitFormal;
-  src: url(../assets/fonts/PetitFormalScript-Regular.ttf);
-}
-@font-face {
-  font-family: Kurale;
-  src: url(../assets/fonts/Kurale-Regular.ttf);
-}
-@font-face {
-  font-family: Poppins;
-  src: url(../assets/fonts/Poppins-Light.ttf);
-}
 
 body {
   margin: 0;
