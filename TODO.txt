@@ -7,3 +7,9 @@
 4-Implementar funções ao button (desenvolver uma página para login e registro de user)
 
 5-Acrescentar README ao projeto
+
+
+
+-Mudar fonte pra vibe cheirosa (mais ddesenhada ou curvada) (PELO AMOR DE DEUS)
+-cor da fonte (mais pastel, lilás)
+-tentar aplicar responsividade na imagem
