@@ -1,5 +1,5 @@
 <script setup>
-import HeaderHome from '../components/Header.vue'
+import { RouterLink } from 'vue-router'
 </script>
 
 <template>
@@ -11,9 +11,12 @@ import HeaderHome from '../components/Header.vue'
       <p>Desperte seus sentidos, libere a sua essência</p>
     </div>
     <div class="loginButton">
+      <RouterLink to="/login" target="_blank">
       <button>Login</button>
+    </RouterLink>
     </div>
-    <p class="cadastro">Não possui login? <a class="hiperLink" href="https://bonzi.link/" target="_blank">Cadastre-se</a></p>
+
+    <p class="cadastro">Não possui login? <RouterLink to="https://bonzi.link/" target="_blank"><a class="hiperLink">Cadastre-se</a></RouterLink></p>
   </div>
 </template>
 
@@ -37,7 +40,7 @@ body {
   text-align: center;
   width: 100%;
   height: 100%;
-  padding-top: 20vh; /* Ajuste conforme necessário */
+  padding-top: 20vh; 
   box-sizing: border-box;
 }
 
