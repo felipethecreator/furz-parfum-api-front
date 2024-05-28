@@ -4,22 +4,20 @@ import HeaderHome from '../components/Header.vue'
 
 <template>
   <div class="container">
-    <p class="pageTitle">
+    <div class="pageTitle">
       <p class="title">Furz<br>parfum</p>
-    </p>
-    <p class="subTitle">
-      <p>Desperte seus sentidos, libere a sua essência</p>
-    </p>
-    <p class="loginButton">
-      <button>Login</button>
-    </p>
-    <p>Não possui login? <a href="https://bonzi.link/">Cadastre-se</a></p>
     </div>
+    <div class="subTitle">
+      <p>Desperte seus sentidos, libere a sua essência</p>
+    </div>
+    <div class="loginButton">
+      <button>Login</button>
+    </div>
+    <p class="cadastro">Não possui login? <a class="hiperLink" href="https://bonzi.link/" target="_blank">Cadastre-se</a></p>
+  </div>
 </template>
 
-
 <style>
-
 body {
   margin: 0;
   padding: 0;
@@ -41,8 +39,6 @@ body {
   height: 100%;
   padding-top: 20vh; /* Ajuste conforme necessário */
   box-sizing: border-box;
-  
-
 }
 
 .pageTitle {
@@ -88,5 +84,11 @@ button {
   }
 }
 
+.cadastro {
+  line-height: 2.9;
+}
 
+.hiperLink {
+  color: blue;
+}
 </style>
