@@ -94,4 +94,57 @@ button {
 .hiperLink {
   color: blue;
 }
+
+@media (max-width: 2560px) {
+  .container {
+  width: 100%;
+  max-width: 2560px;
+  margin: 0 auto;
+  }
+  .pageTitle {
+    font-size: 200px;
+  }
+  .subTitle {
+    font-size: 40px;
+  }
+  .cadastro {
+    font-size: 30px;
+  }
+}
+
+/* Estilos para resoluções Full HD */
+@media (max-width: 1920px) {
+  .container {
+    width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  }
+  .pageTitle {
+    font-size: 200px;
+  }
+  .subTitle {
+    font-size: 40px;
+  }
+  .cadastro {
+    font-size: 30px;
+  }
+}
+
+/* Estilos para iPhone XR (ou dispositivos com largura semelhante) */
+@media (max-width: 600px) {
+  .container {
+    max-width: 414px;
+    padding: 0 10px; 
+  }
+  .pageTitle {
+    font-size: 100px;
+  }
+  .subTitle {
+    font-size: 30px;
+  }
+  .cadastro {
+    font-size: 10px;
+  }
+}
+
 </style>
