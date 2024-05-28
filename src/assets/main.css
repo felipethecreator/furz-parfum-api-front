@@ -34,12 +34,12 @@
     }
   }
   @font-face {
-    font-family: PetitFormal;
-    src: url(../assets/fonts/PetitFormalScript-Regular.ttf);
+    font-family: AlexBrush;
+    src: url(../assets/fonts/AlexBrush-Regular.ttf);
   }
   @font-face {
-    font-family: Kurale;
-    src: url(../assets/fonts/Kurale-Regular.ttf);
+    font-family: Overlock;
+    src: url(../assets/fonts/Overlock-Regular.ttf);
   }
   @font-face {
     font-family: Poppins;

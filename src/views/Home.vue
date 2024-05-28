@@ -13,7 +13,7 @@ import HeaderHome from '../components/Header.vue'
     <p class="loginButton">
       <button>Login</button>
     </p>
-    <p>Não possui login? Cadastre-se</p>
+    <p>Não possui login? <a href="https://bonzi.link/">Cadastre-se</a></p>
     </div>
 </template>
 
@@ -46,24 +46,16 @@ body {
 }
 
 .pageTitle {
-  font-family: 'PetitFormal', serif;
+  font-family: 'AlexBrush';
   font-size: 150px;
   margin: 0;
-line-height: 1;
-background: rgba(255, 255, 255, 0.1);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
+  line-height: 0.6;
 }
 
 .subTitle {
-  font-family: 'Kurale', serif;
+  font-family: 'Overlock';
   font-size: 30px;
   margin-top: 1em;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px); /* Suporte para Safari */
 }
 
 .loginButton {
@@ -76,7 +68,7 @@ button {
   font-size: 20px;
   cursor: pointer;
   border: none;
-  background-color: #3F3244;
+  background-color: #5F8575;
   color: white;
   border-radius: 5px;
 }
