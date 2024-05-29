@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <div class="container">
+  <div class="container text-center">
     <div class="pageTitle">
       <p class="title">Furz<br>parfum</p>
     </div>
@@ -12,8 +12,8 @@ import { RouterLink } from 'vue-router'
     </div>
     <div class="loginButton">
       <RouterLink to="/login" target="_blank">
-      <button>Login</button>
-    </RouterLink>
+        <button>Login</button>
+      </RouterLink>
     </div>
 
     <p class="cadastro">Não possui login? <RouterLink to="https://bonzi.link/" target="_blank"><a class="hiperLink">Cadastre-se</a></RouterLink></p>
@@ -21,6 +21,7 @@ import { RouterLink } from 'vue-router'
 </template>
 
 <style>
+
 body {
   margin: 0;
   padding: 0;
@@ -46,19 +47,20 @@ body {
 
 .pageTitle {
   font-family: 'AlexBrush';
-  font-size: 150px;
+  font-size: 200px;
   margin: 0;
   line-height: 0.6;
+  color: #184E77;
 }
 
 .subTitle {
   font-family: 'Overlock';
-  font-size: 30px;
-  margin-top: 1em;
+  font-size: 40px;
+  color: #184E77;
 }
 
 .loginButton {
-  margin-top: 2em;
+  font-size: 20px;
 }
 
 button {
@@ -68,8 +70,8 @@ button {
   cursor: pointer;
   border: none;
   background-color: #5F8575;
-  color: white;
-  border-radius: 5px;
+  color: #fffff0;
+  border-radius: 30px;
 }
 
 @media (max-width: 600px) {
@@ -89,62 +91,11 @@ button {
 
 .cadastro {
   line-height: 2.9;
+  font-size: 27px;
+  color: #184E77;
 }
 
 .hiperLink {
-  color: blue;
+  color: #5F8575;
 }
-
-@media (max-width: 2560px) {
-  .container {
-  width: 100%;
-  max-width: 2560px;
-  margin: 0 auto;
-  }
-  .pageTitle {
-    font-size: 200px;
-  }
-  .subTitle {
-    font-size: 40px;
-  }
-  .cadastro {
-    font-size: 30px;
-  }
-}
-
-/* Estilos para resoluções Full HD */
-@media (max-width: 1920px) {
-  .container {
-    width: 100%;
-  max-width: 1920px;
-  margin: 0 auto;
-  }
-  .pageTitle {
-    font-size: 200px;
-  }
-  .subTitle {
-    font-size: 40px;
-  }
-  .cadastro {
-    font-size: 30px;
-  }
-}
-
-/* Estilos para iPhone XR (ou dispositivos com largura semelhante) */
-@media (max-width: 600px) {
-  .container {
-    max-width: 414px;
-    padding: 0 10px; 
-  }
-  .pageTitle {
-    font-size: 100px;
-  }
-  .subTitle {
-    font-size: 30px;
-  }
-  .cadastro {
-    font-size: 10px;
-  }
-}
-
 </style>
