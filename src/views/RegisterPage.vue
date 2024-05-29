@@ -2,7 +2,7 @@
 
 <template>
     <div>
-        <p class="peido">bosta peido bunda merda</p>
+        <p>PEIDO PEIDO</p>
 </div>
 </template>
 
