@@ -15,12 +15,13 @@
 </template>
 
 <style>
+
 .login-page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #5F8575; 
+  background-color: #184E77; 
 }
 
 .login-container {
@@ -73,7 +74,7 @@
 }
 
 .login-form button {
-  background-color: #5F8575;
+  background-color: #184E77;
   color: white;
   padding: 10px;
   border: none;
@@ -83,7 +84,7 @@
 }
 
 .login-form button:hover {
-  background-color: #5F8575;
+  background-color: #184E77;
 }
 
 </style>

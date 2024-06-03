@@ -11,7 +11,7 @@ import { RouterLink } from 'vue-router'
       <p>Desperte seus sentidos, libere a sua essência</p>
     </div>
     <div class="loginButton">
-      <RouterLink to="/login" target="_blank">
+      <RouterLink to="/login">
         <button>Login</button>
       </RouterLink>
     </div>
@@ -21,10 +21,6 @@ import { RouterLink } from 'vue-router'
 </template>
 
 <style>
-
-body {
-  background-image: url("../assets/images/landingpage.png");
-}
 
 .container {
   display: flex;
