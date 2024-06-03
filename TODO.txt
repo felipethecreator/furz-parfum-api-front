@@ -1,5 +1,9 @@
 1-Iniciar testes do postman e colocar os mesmos no repositório
 
-2-Iniciar a view LoginPage
+2-Acrescentar README ao projeto
 
-3-Acrescentar README ao projeto
+
+
+DUVIDAS COM O CAIO:
+
+-Como faço pra tirar a imagem de fundo da view "LoginPage" sem afetar a view Home
