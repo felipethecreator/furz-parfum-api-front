@@ -23,15 +23,7 @@ import { RouterLink } from 'vue-router'
 <style>
 
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(../assets/images/landingpage.png);
-  background-size: cover;
-  font-family: 'Poppins', sans-serif;
+  background-image: url("../assets/images/landingpage.png");
 }
 
 .container {
