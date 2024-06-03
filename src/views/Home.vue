@@ -16,7 +16,7 @@ import { RouterLink } from 'vue-router'
       </RouterLink>
     </div>
 
-    <p class="cadastro">Não possui login? <RouterLink to="https://bonzi.link/" target="_blank"><a class="hiperLink">Cadastre-se</a></RouterLink></p>
+    <p class="cadastro">Não possui login? <RouterLink to="/register"><a class="hiperLink">Cadastre-se</a></RouterLink></p>
   </div>
 </template>
 
