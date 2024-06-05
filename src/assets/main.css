@@ -30,12 +30,6 @@
     padding: 3px;
   }
 
-  @media (hover: hover) {
-    a:hover {
-      background-color: hsla(212, 100%, 20%, 0.2);
-    }
-  }
-
   @media (min-width: 1024px) {
     body {
       display: flex;
