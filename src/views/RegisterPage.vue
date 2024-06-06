@@ -4,12 +4,15 @@
 <div class="login-container">
     <form class="login-form">
         <h2>Registrar</h2>
-        <label for="username">Nome de exibição</label>
+        <label for="username">Nome completo</label>
         <input type="text" id="username" name="username">
+        <label for="displayname">Nome de exibição</label>
+        <input type="text" id="displayname" name="displayname">
         <label for="password">Senha</label>
-        <input type="password" id="password" name="password">
-        <a href="#" class="forgot-password">Esqueci a senha</a>
-        <button type="submit">Entrar</button>
+        <input type="password" id="password" name="password"> 
+        <div class="botao">
+        <button type="submit" id="botaoRegistrar">Registrar</button>
+      </div>
     </form>
 </div>
 </template>
@@ -85,6 +88,11 @@
 
 .login-form button:hover {
   background-color: #184E77;
+}
+
+.botao {
+  padding-top: 3vh; 
+
 }
 
 </style>

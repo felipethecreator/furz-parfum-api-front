@@ -20,7 +20,7 @@ import { RouterLink } from 'vue-router'
   </div>
 </template>
 
-<style>
+<style scoped>
 
 .container {
   display: flex;
@@ -76,6 +76,19 @@ button {
     padding: 0.4em 0.8em;
   }
 }
+
+@media (min-width: 1024px) {
+    body {
+      display: flex;
+      place-items: center;
+    }
+
+    #app {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 0 2rem;
+    }
+  }
 
 .cadastro {
   line-height: 2.9;
