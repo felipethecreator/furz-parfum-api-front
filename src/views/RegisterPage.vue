@@ -3,7 +3,7 @@
 <template>
 <div class="login-container">
     <form class="login-form">
-        <h2>Registrar</h2>
+        <h2>Cadastrar</h2>
         <label for="username">Nome completo</label>
         <input type="text" id="username" name="username">
         <label for="displayname">Nome de exibição</label>
@@ -92,7 +92,6 @@
 
 .botao {
   padding-top: 3vh; 
-
 }
 
 </style>
