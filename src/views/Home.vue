@@ -38,13 +38,13 @@ import { RouterLink } from 'vue-router'
   font-size: 200px;
   margin: 0;
   line-height: 0.6;
-  color: #184E77;
+  color:black;
 }
 
 .subTitle {
   font-family: 'Overlock';
-  font-size: 40px;
-  color: #184E77;
+  font-size: 35px;
+  color: black;
 }
 
 .loginButton {
@@ -57,9 +57,9 @@ button {
   font-size: 20px;
   cursor: pointer;
   border: none;
-  background-color: #5F8575;
+  background-color: #184E77;
   color: #fffff0;
-  border-radius: 30px;
+  border-radius: 20px;
 }
 
 @media (max-width: 600px) {
@@ -91,12 +91,12 @@ button {
   }
 
 .cadastro {
-  line-height: 2.9;
-  font-size: 27px;
-  color: #184E77;
+  line-height: 2.5;
+  font-size: 25px;
+  color: black;
 }
 
 .hiperLink {
-  color: #5F8575;
+  color: #184E77;
 }
 </style>
