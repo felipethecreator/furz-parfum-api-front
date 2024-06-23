@@ -1,24 +1,70 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue'
+
+// Definindo as variáveis reativas para armazenar os dados do formulário
+const name = ref('')
+const displayName = ref('')
+const password = ref('')
+const message = ref('')
+
+// Função para registrar o usuário
+const registerUser = async () => {
+  console.log('Register button clicked')
+  console.log('Name:', name.value)
+  console.log('Display Name:', displayName.value)
+  console.log('Password:', password.value)
+
+  try {
+    const response = await fetch('http://localhost:8080/register', { // Atualize a porta para 8080
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: name.value,
+        displayName: displayName.value,
+        password: password.value
+      })
+    })
+
+    if (!response.ok) {
+      let errorResponse = 'Unknown error occurred'
+      try {
+        const responseText = await response.text()
+        errorResponse = responseText ? JSON.parse(responseText).message : errorResponse
+      } catch (e) {
+        // Caso não seja possível fazer o parsing, mantém a mensagem de erro padrão
+      }
+      message.value = `Failed to register user: ${errorResponse}`
+    } else {
+      const responseData = await response.json()
+      message.value = 'User registered successfully!'
+    }
+  } catch (error) {
+    message.value = `Error: ${error.message}`
+  }
+}
+</script>
 
 <template>
-<div class="login-container">
-    <form class="login-form">
-        <h2>Cadastrar</h2>
-        <label for="username">Nome completo</label>
-        <input type="text" id="username" name="username">
-        <label for="displayname">Nome de exibição</label>
-        <input type="text" id="displayname" name="displayname">
-        <label for="password">Senha</label>
-        <input type="password" id="password" name="password"> 
-        <div class="botao">
+  <div class="login-container">
+    <form class="login-form" @submit.prevent="registerUser">
+      <h2>Cadastrar</h2>
+      <label for="username">Nome completo</label>
+      <input type="text" id="username" v-model="name" required>
+      <label for="displayname">Nome de exibição</label>
+      <input type="text" id="displayname" v-model="displayName" required>
+      <label for="password">Senha</label>
+      <input type="password" id="password" v-model="password" required>
+      <div class="botao">
         <button type="submit" id="botaoRegistrar">Registrar</button>
       </div>
+      <p v-if="message">{{ message }}</p>
     </form>
-</div>
+  </div>
 </template>
 
 <style>
-
 .login-page {
   display: flex;
   justify-content: center;
@@ -28,7 +74,7 @@
 }
 
 .login-container {
-  display: flex;
+  display: flex; 
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -93,5 +139,4 @@
 .botao {
   padding-top: 3vh; 
 }
-
 </style>
