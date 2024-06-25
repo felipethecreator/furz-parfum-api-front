@@ -1,21 +1,65 @@
-<script setup></script>
+<script setup>
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+import { useToast } from 'vue-toastification';
+
+const username = ref('');
+const password = ref('');
+
+const router = useRouter();
+const toast = useToast();
+
+const login = async () => {
+  const response = await fetch('http://localhost:8080/login', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      displayname: username.value,
+      password: password.value,
+    }),
+  });
+
+  if (response.ok) {
+    const user = await response.json();
+    console.log('User logged in:', user);
+    router.push('/page');
+  } else {
+    const error = await response.json();
+    handleLoginError(error);
+  }
+};
+
+const handleLoginError = (error) => {
+  switch (error.error) {
+    case 'Parametros-invalidos':
+      toast.error(`${error.message}: ${error.reason}`);
+      break;
+    case 'Falta-de-Campos':
+      toast.error(`${error.message}: ${error.reason}`);
+      break;
+    default:
+      toast.error('Ocorreu um erro ao logar');
+  }
+};
+</script>
 
 <template>
-<div class="login-container">
-    <form class="login-form">
-        <h2>Login</h2>
-        <label for="username">Nome de exibição</label>
-        <input type="text" id="username" name="username">
-        <label for="password">Senha</label>
-        <input type="password" id="password" name="password">
-        <a href="#" class="forgot-password">Esqueci a senha</a>
-        <button type="submit">Entrar</button>
+  <div class="login-container">
+    <form class="login-form" @submit.prevent="login">
+      <h2>Login</h2>
+      <label for="username">Nome de exibição</label>
+      <input type="text" id="username" name="username" v-model="username">
+      <label for="password">Senha</label>
+      <input type="password" id="password" name="password" v-model="password">
+      <a href="#" class="forgot-password">Esqueci a senha</a>
+      <button type="submit">Entrar</button>
     </form>
-</div>
+  </div>
 </template>
 
 <style>
-
 .login-page {
   display: flex;
   justify-content: center;
@@ -86,5 +130,4 @@
 .login-form button:hover {
   background-color: #184E77;
 }
-
 </style>
